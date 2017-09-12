@@ -1,26 +1,26 @@
 #include "stdafx.h"
 #include "iostream"
-#include <string>
+#include "string"
+#include "fstream"
 
 using namespace std;
 
 int main()
 {
-	//cout << "Hello world" << "!" << endl;
-
 	static int c, q, d;
 	static int arr[10];
 	
+	ifstream fin("input.txt");
+	ofstream fout("output.txt");
+
+	int temp;
+	fin >> temp;
+	fout << temp;
+
+	fin.close();
+	fout.close();
+	
 	/*
-	cout << " Input a:" << endl;
-	cin >> a;
-
-	cout << " Input b:" << endl;
-	cin >> b;
-
-	c = a + b;
-	*/
-
 	string p = "1234";
 
 	for (int i = 0; i < 10; i++)
@@ -45,16 +45,16 @@ int main()
 	{
 		l1:
 		mov ebx, 9
-		mov eax, arr[0]
+		mov eax, arr[1]
 		add eax, ebx
 		add d, eax
 		//loop l1;
 	}
 
-	d = stoi(p);
+	//d = stoi(p);
 
 	cout << "result: " << c << " " << d << endl;
 
-	cin.get();
+	cin.get();*/
     return 0;
 }
