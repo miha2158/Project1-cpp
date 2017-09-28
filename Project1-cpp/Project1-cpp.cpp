@@ -1,12 +1,42 @@
 #include "stdafx.h"
-#include "iostream"
-#include "string"
-#include "fstream"
+#include <conio.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
-int main()
+void main()
 {
+	signed short int p = INT16_MAX;
+
+	cout << p;
+
+	p++;
+
+	cout << p;
+
+
+
+
+
+	
+	/*
+	string p = "123 456 8 79 111 5";
+
+	istringstream iss(p);
+
+	vector<string> tokens{ istream_iterator<string>{iss},
+		istream_iterator<string>{} };
+
+	for (auto token : tokens)
+		cout << token << endl;
+	*/
+	/*
 	static int c, q, d;
 	static int arr[10];
 	
@@ -20,7 +50,6 @@ int main()
 	fin.close();
 	fout.close();
 	
-	/*
 	string p = "1234";
 
 	for (int i = 0; i < 10; i++)
@@ -54,7 +83,7 @@ int main()
 	//d = stoi(p);
 
 	cout << "result: " << c << " " << d << endl;
+	*/
 
-	cin.get();*/
-    return 0;
+	_getch();
 }
